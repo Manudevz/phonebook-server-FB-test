@@ -18,6 +18,7 @@ const optionsCors = {
 	origin: "http://localhost:5173",
 };
 app.use(cors(optionsCors));
+app.use(express.static("dist"));
 
 const PORT = process.env.PORT || 3001;
 
